@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>3D HTML</Name>
+    <Assembly>C:\Program Files\ClearView3D\ClearView.dll</Assembly>
+    <FullClassName>ClearView.App</FullClassName>
+    <ClientId>8f3c2b10-6a4e-4d91-9c11-a7e2c0b14c3d</ClientId>
+    <VendorId>CLVW</VendorId>
+    <VendorDescription>ClearView 3D — 3D HTML free export</VendorDescription>
+  </AddIn>
+</RevitAddIns>

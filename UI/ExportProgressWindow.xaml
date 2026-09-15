@@ -1,0 +1,29 @@
+<Window x:Class="ClearView.UI.ExportProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="3D HTML — Exporting"
+        Height="180" Width="420"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#FFFFFF"
+        Foreground="#1A1A1A"
+        Topmost="True"
+        FontFamily="Segoe UI"
+        ShowInTaskbar="False">
+  <Grid Margin="20">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <TextBlock Text="Exporting current 3D view…" FontSize="16" FontWeight="SemiBold"/>
+    <TextBlock x:Name="StatusText" Grid.Row="1" Margin="0,8,0,0" Foreground="#666666"
+               Text="Preparing CustomExporter…"/>
+    <ProgressBar x:Name="Bar" Grid.Row="2" Height="8" Margin="0,14,0,0"
+                 IsIndeterminate="True" Background="#EEEEEE" Foreground="#1A1A1A"/>
+    <Button Grid.Row="3" Content="Cancel export" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+            Padding="14,8" Click="Cancel_Click" Background="#F0F0F0" Foreground="#1A1A1A"
+            BorderBrush="#CCCCCC" BorderThickness="1"/>
+  </Grid>
+</Window>
